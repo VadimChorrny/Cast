@@ -2,12 +2,12 @@
 
 void Daddy::Sleep()
 {
-	cout << "Daddy " << getNameDaddy() << endl;
+	cout << "Daddy " << getNameDaddy() << " is sleep!" << endl;
 }
 
 void Daddy::Walk()
 {
-	cout << "Daddy " << getNameDaddy() << "walked!" << endl;
+	cout << "Daddy " << getNameDaddy() << " walked!" << endl;
 }
 
 string Daddy::getNameDaddy()

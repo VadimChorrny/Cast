@@ -5,15 +5,41 @@
 #include "Daddy.h"
 #include "Son.h"
 using namespace std;
+void castFamily (vector<Grandpa* > tmp) 
+{
+	Daddy* daddy;
+	Son* son;
+	for (auto& i : tmp)
+	{
+		//i->print()
+		if (typeid(*i) == typeid(Grandpa)) 
+		{
+			i->Sleep();
+		}
+		else if (typeid(*i) == typeid(Daddy))
+		{
+			daddy = static_cast<Daddy*>(i);
+			daddy->Walk();
+			daddy->Sleep();
+		}
+		else if (typeid(*i) == typeid(Son))
+		{
+			son = static_cast<Son*>(i);
+			son->Walk();
+			son->Play();
+			son->Sleep();
+		}
+	}
 
+}
 int main()
 {
-	//vector<Grandpa*> people{ new Grandpa("Igon"), new Daddy("Igor", "Alex"), new Son("Igor", "Alex", "Ivan") };
-	Grandpa a("Anton");
-	a.Sleep();
-	Daddy* p = &a;
-	//reinterpret_cast<Aspirant *>(p)->learn();
+	cout << "\n---------------People---------------\n";
+	vector<Grandpa* >list{ new Grandpa("Ivan"),new Daddy("Ivan","Alex"),new Son("Ivanovich","Alexandrovich","Vadim") };
 
-	/*static_cast<Aspirant*>(p)->learn();
-	static_cast<Aspirant*>(p)->writeDyplom();*/
+	Grandpa grandpa("Ivan");
+	Daddy daddy("Ivan", "Ales");
+	Son son("Ivan", "Alex", "Vadim");
+
+	castFamily(list);
 }

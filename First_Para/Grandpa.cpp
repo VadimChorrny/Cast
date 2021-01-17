@@ -2,8 +2,10 @@
 
 void Grandpa::Sleep()
 {
-	cout << "Grandpa " << getName() << "is sleeping!" << endl;
+	cout << "Grandpa " << getName() << " is sleeping!" << endl;
 }
+
+
 
 string Grandpa::getName() const
 {

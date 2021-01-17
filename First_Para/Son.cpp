@@ -7,15 +7,15 @@ string Son::getNameSon() const
 
 void Son::Sleep()
 {
-    cout << "Son:\t" << getNameSon() << "is sleeping!" << endl;
+    cout << "Son:\t" << getNameSon() << " is sleeping!" << endl;
 }
 
 void Son::Walk()
 {
-    cout << "Son:\t" << getNameSon() << "is walked!" << endl;
+    cout << "Son:\t" << getNameSon() << " is walked!" << endl;
 }
 
 void Son::Play()
 {
-    cout << "Son:\t" << getNameSon() << "played!" << endl;
+    cout << "Son:\t" << getNameSon() << " played!" << endl;
 }
