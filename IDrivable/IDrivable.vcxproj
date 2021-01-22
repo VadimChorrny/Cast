@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{707bd0cc-27f9-4a47-8c25-9f3c08a51149}</ProjectGuid>
-    <RootNamespace>FirstPara</RootNamespace>
+    <ProjectGuid>{a559327a-b946-4db5-9215-a39eaa3b1db1}</ProjectGuid>
+    <RootNamespace>IDrivable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>People</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,17 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Daddy.cpp" />
-    <ClCompile Include="Grandpa.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Son.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Daddy.h" />
-    <ClInclude Include="Grandpa.h" />
-    <ClInclude Include="Person.h" />
-    <ClInclude Include="Son.h" />
+    <ClCompile Include="IDrivable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
